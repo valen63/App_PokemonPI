@@ -1,0 +1,17 @@
+.All{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ball{
+    margin: 10px 3px 20px;
+    height: 40px;
+    width: 40px;
+    background: #1a2121db;
+    border-radius: 50%;
+    align-items: center;
+    color: #ffe804ad;
+    font-weight: bold;
+    border: 1px solid;
+    font-family: 'Macondo', cursive;
+}

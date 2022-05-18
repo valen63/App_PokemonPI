@@ -1,0 +1,121 @@
+.Conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    height: 92vh;
+    padding: 0px 100px;
+    background: url(https://www.wallpaperup.com/uploads/wallpapers/2016/12/27/1068679/285693eb2760f31c5d5eb2f111f7987b-700.jpg);
+    background-size: cover;
+    align-content: center;
+    justify-content: center;
+}
+
+.btn {
+    margin: 3%;
+    width: 80px;
+    padding: 4px 16px;
+    color: white;
+    background-color: #006e18c4;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid
+}
+
+.btn:hover {
+    color: #00cf2d;
+    background: #000000ed;
+}
+
+.Info {
+    background: url(https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/90/latest/20200110034558/Artwork_de_la_Isla_de_la_Armadura.png/1200px-Artwork_de_la_Isla_de_la_Armadura.png);
+    background-size: cover;
+    min-height: 92vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.pag {
+    display: flex;
+    align-items: flex-end;
+}
+
+.Crds {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Crd {
+    width: 23%;
+    height: 130px;
+    background: #00000080;
+    margin: 5px;
+    border-radius: 30px;
+    align-items: center;
+    border: 1px solid #ffffff94;
+    color: aliceblue;
+    font-size: 30px;
+    margin-top: 18px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.all {
+    display: flex;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #071834d1;
+    color: #f0f8ff;
+    border-left: 2px solid;
+    width: 340px;
+    padding: 50px 0px;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+}
+
+@media (max-width: 850px) {
+    .Crd {
+        width: 30%;
+    }
+}
+
+@media (max-width: 850px) {
+    .Crd {
+        width: 40%;
+        font-size: 20px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .Info {
+        flex-direction: column-reverse;
+    }
+
+    .panel {
+        width: 100%;
+        padding-top: 20px;
+        border-left: none;
+        border-bottom: 2px solid;
+        padding: 20px 0px;
+    }
+
+    .Crd {
+        width: 30%;
+    }
+}

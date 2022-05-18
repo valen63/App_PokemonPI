@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+.errorA {
+    background: #039097;
+    min-height: 99vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.img {
+    height: 150px;
+    margin: 0px 20px;
+}
+
+.cuatro {
+    color: #ffe804;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 190px;
+    font-weight: bold;
+}
+
+.p {
+    margin: 5px;
+    color: #f5f0b3;
+}
+
+.btn {
+    position: relative;
+    bottom: -50px;
+    color: #ffc624;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid;
+    background: #0b1f42de;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #ffc624;
+    color: #0b1f42de;
+}
+
+.errorB {
+    background: linear-gradient(90deg, rgba(255, 131, 36, 1) 0%, rgba(255, 198, 36, 1) 50%, rgba(255, 131, 36, 1) 100%);
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.cuatroB {
+    color: #1b5e75;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 190px;
+    font-weight: bold;
+}
+
+.pB {
+    margin: 5px;
+    color: #0b1f42;
+    FONT-WEIGHT: BOLD;
+}
+
+.btnB {
+    position: relative;
+    bottom: -50px;
+    color: #0b1f42de;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid;
+    background: #ff8924;
+}
+
+.btnB:hover {
+    background: #0b1f42de;
+    color: #ff8924;
+}
+
+.errorB2 {
+    background: linear-gradient(90deg, rgba(255, 131, 36, 1) 0%, rgba(255, 198, 36, 1) 50%, rgba(255, 131, 36, 1) 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Source Code Pro', monospace;
+
+}

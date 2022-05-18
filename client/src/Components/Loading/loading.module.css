@@ -1,0 +1,44 @@
+
+.Conteiner{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    background-image: url(https://images4.alphacoders.com/718/thumb-1920-718581.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+
+.h1{
+    height: 200px;
+    margin: 10px;
+}
+.img{
+    height: 130px;
+    background: transparent;
+    position: absolute;
+}
+a{
+    display: flex;
+    justify-content: center;   
+}
+
+
+.Ligth{
+    height: 145px;
+    width: 145px;
+    top: -22px;
+    position: relative;
+    border-radius: 50%;
+
+    animation: 3s  10;
+    animation-name: colors;
+}
+@keyframes colors {
+    50%{background-color: #12f6cc36;
+        height: 130px;
+        width: 130px;
+        top: -18px;}
+}

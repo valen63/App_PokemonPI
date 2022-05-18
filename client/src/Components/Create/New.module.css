@@ -1,0 +1,73 @@
+.background{
+    background: url(https://st2.depositphotos.com/3213441/12022/v/950/depositphotos_120226584-stock-illustration-pokemon-go-pokeball-seamless-texture.jpg);
+    background-size: cover;
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form{
+    background-color: #000000c7;
+    border-radius: 50px;
+    margin: 20px 100px;
+    padding: 15px 60px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+    color: #cacd00;
+    justify-content: space-evenly;
+}
+.label{
+    font-style: italic;
+    position: relative;
+    top: -30px;
+    font-size: small;
+}
+.divs{
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+}
+.tp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+.errors{
+    background-color: #ff00007a;
+    width: 100%;
+    padding: 4px;
+    color: white;
+}
+.good{
+    background-color: #adff2fa1;
+    width: 100%;
+    padding: 4px;
+    color: white;
+}
+.send{
+    background-color: #015778;
+    padding: 6px;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.send:hover{
+    color: #015778;
+    background: #cfcccc;
+}
+
+@media (max-width: 700px) {
+    .form{
+        margin: 2% 10%;
+        font-size: small;
+    }
+    .label{ top:-10px}
+    .divs{width: 100%;margin: 2px;}
+}

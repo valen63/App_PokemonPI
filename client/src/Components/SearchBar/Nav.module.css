@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+.Nav{
+    background-color: #0b1f42;
+    display: flex;
+    justify-content: space-around;
+    min-height: 50px;
+    align-items: center;
+    border-bottom: white 2px solid;
+}
+.btn{
+    background: #fffdf3;
+    padding: 3px 15px;
+    border-radius: 4px;
+    /* color: #049df7; */
+    color: #00cba5;
+    border: solid 2px;
+    font-family: 'Macondo', cursive;
+    font-weight: bold
+}
+.btn:hover{
+    background: #009378;
+    color: #ffffff;
+}
+.btn2{
+    padding: 3px 15px;
+    border-radius: 4px;
+    color: #00b392;
+    border: 2px solid;
+    font-weight: bold;
+}
+.btn2:hover{
+    background: #009378;
+    color: #ffffff;
+}
+input{
+    width: 130px;
+    padding: 4px 5px;
+    margin: 0px 10px;
+    border: none;
+    border-radius: 3px;
+    font-style: italic;
+    text-align: center;
+}
+.img{
+    height: 23px;
+}
+.btn3{
+    border-radius: 4px;
+    border: 2px ;
+    cursor: pointer;
+}
+@media (max-width: 500px) {
+    .btn {
+        margin: 5px;
+        width: 20px;
+        font-size: small;
+    }
+    .btn3{
+        width: 0px;
+        visibility: hidden;
+    }
+    .btn2{
+        padding: 4px;
+    }
+    input{
+        width: 40%;
+    }
+}

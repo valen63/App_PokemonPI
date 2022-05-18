@@ -1,0 +1,95 @@
+.CardD {
+    display: flex;
+    justify-content: center;
+    min-height: 92vh;
+    background: url(https://pokecompany.com/wp-content/uploads/2015/02/Pikachu-VS-Lucario.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.info {
+    background: #0b1f42bf;
+    max-height: 90vh;
+    margin: 20px 0px;
+    padding: 0px 150px;
+    border-radius: 70px;
+    border: 2px solid #e5cd3fc7;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+
+.imagen{
+    height: 180px;
+}
+.h1 {
+    color: #ffe000d1;
+    font-family: 'Oswald', sans-serif;
+    font-size: 45px;
+    margin: 15px;
+}
+
+.p1 {
+    font-style: italic;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    width: 280px;
+}
+.label1{
+    position: absolute;
+    left: 70%;
+    top: -12px;
+    font-size: 10px
+}
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: transparent;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 9px;
+    width: 100px;
+    background: #268ba9;
+    border-radius: 25px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #ffe000d1;
+    -webkit-appearance: none;
+    margin-top: -1px;
+}
+
+.Types{
+    display: flex;
+    justify-content: center;
+}
+.Butons{
+    background-color: #d4c110;
+    padding: 2px 10px;
+    margin: 5px;
+    color: #0b1f42;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid;
+}
+.Butons:hover{
+    background-color: #0b1f42;
+    color: #ffc624;
+    font-weight: 500;
+}
+@media (max-width: 700px) {
+    .info{
+        margin: 2% 12%;
+        padding: 0% 20%;
+    }.p1{width: 260px;margin: 8px;}
+    .Butons{margin: 10px;}
+}

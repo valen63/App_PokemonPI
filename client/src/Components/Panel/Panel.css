@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100&display=swap');
+
+.Active_Panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #071834d1;
+    color: #f0f8ff;
+    border-left: 2px solid;
+    width: 25%;
+    padding: 50px 0px;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+
+}
+
+.Not_Panel {
+    visibility: hidden;
+    position: absolute;
+}
+
+.types {
+    display: flex;
+    align-items: center;
+    color: #baab12;
+    height: 0px;
+    margin: 20px;
+}
+
+input[type=checkbox] {
+    width: 20px;
+}
+
+input[type="checkbox"]:checked+p {
+    color: #d9ff0a;
+}
+
+.boton {
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #0aff8e;
+    font-weight: bold;
+    font-size: small;
+    padding: 5px 8px;
+    font-family: 'Bitter', serif;
+    margin: 5px;
+}
+
+.boton_act {
+    background: #0aff8e8f;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: small;
+    padding: 5px 8px;
+    font-family: 'Bitter', serif;
+    margin: 5px;
+}
+
+.boton:hover {
+    background-color: #00a157;
+    color: #ffffff;
+    font-weight: bolder;
+    border: 2px solid;
+}
+
+
+@media (max-width: 500px) {
+    .Active_Panel {
+        width: 100%;
+        padding-top: 20px;
+        border-left: none;
+        border-bottom: 2px solid;
+    }
+
+    .Not_Panel {
+        width: 100%;
+    }
+}
