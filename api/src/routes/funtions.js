@@ -8,7 +8,6 @@ async function getAll() {
         if(PokemonsData.length < 40 ){for (let i = 1; i < 61; i++) {
             let Onepokemon = await axios.get(`https://pokeapi.co/api/v2/pokemon/${i}`)//Voy a la url de la pagina, copio todo
                 .then((resp) => {
-                    console.log(resp.data.id)
                     let todo = resp.data;
                     let tipos = todo.types.map(e => { return { id: parseInt(e.type.url.split("/")[6]), name: e.type.name } });
 
