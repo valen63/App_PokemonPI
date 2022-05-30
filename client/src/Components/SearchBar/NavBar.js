@@ -33,9 +33,10 @@ function SearchBar(props) {
       {props.other==="yes"? <NavLink to="/Type" className={style.btn}>TYPES</NavLink>:<NavLink to="/Home" className={style.btn}>HOME</NavLink>}
       <div>
         <input placeholder="Find Pokemon... " id="Find" onChange={(e) => Changes(e)} className={style.input} />
-        <button onClick={() => Find()} className={style.btn2}>Search</button>
+        <button onClick={() => Find()} className={style.btn2}><NavLink to="/Home" className={style.NavLink}>Search</NavLink></button>
       </div>
       <NavLink to="/Create" className={style.btn}>Create Pokemon</NavLink>
+      {props.fav ? null: <NavLink to="/Favorite" className={style.btn}>Fav</NavLink>}
       {props.btn === "false" ? null:<button onClick={() => Panel()} className={style.btn3}><img className={style.img} alt="" src={imagen} /></button>}
     </div>
   );

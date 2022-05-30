@@ -5,6 +5,7 @@ const initialState = {
   types: [],
   filtertypes: [],
   other: [],
+  favorites:[],
 };
 
 
@@ -137,6 +138,18 @@ export default function rootReducer(state = initialState, { type, payload }) {
         ...state,
         filteredPokemons: state.totalPokemons,
       };
+    case "FAVORITE":
+      if (payload.name === "ADD") {
+        return { 
+          ...state, 
+          favorites: state.favorites.concat([payload.info]) 
+        }
+      } else if (payload.name === "REMOVE") {
+        return { 
+          ...state, 
+          favorites: state.favorites.filter(e => e.id !== payload.info) 
+        }
+      } else { return state } 
     default:
       return state;
   }

@@ -1,17 +1,29 @@
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import NotFound from "../NotFound";
+import Wait from "../Wait";
+import star from "../starnot.png";
+import starselect from "../star.png";
+import { Favorites } from "../../Reducer/Action";
 
 import style from "./Card.module.css";
 
-function CardD() {
-    const { details } = useSelector((state) => state);
+function CardD({id, dispatch}) {
+    const { details, favorites } = useSelector((state) => state);
     let info = details[0];
+
+    function Click(e){
+        if(e.target.alt === "not"){Favorites("ADD", details[0])(dispatch)}
+        else if(e.target.alt === "yes"){Favorites("REMOVE",details[0].id)(dispatch)}
+    }
     return (
         <div className={style.CardD}>
-            {details.length === 0 ? null:
+            {details.length === 0 ? <Wait />:
             details[0] === 404? < NotFound type="A"/>:
+            details[0].id !== id? < Wait/>:
                 <div className={style.info}>
+                    <button onClick={(e)=> Click(e)} className={style.starbtn}>{favorites.filter(e=>e.id === id).length>0 ? 
+            <img alt="yes" src={starselect} className={style.star} />:<img alt="not" src={star} className={style.star} />}</button>
                     <h1 className={style.h1}>{info.name.toUpperCase()}</h1>
                     <img alt="" src={info.img} className={style.imagen}/>
                     

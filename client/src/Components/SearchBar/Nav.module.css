@@ -50,6 +50,11 @@ input{
     border: 2px ;
     cursor: pointer;
 }
+.NavLink{
+    color: #00cba5;
+}.NavLink:hover{
+    color: #ffffff;
+}
 @media (max-width: 500px) {
     .btn {
         margin: 5px;

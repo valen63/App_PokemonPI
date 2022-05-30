@@ -117,3 +117,9 @@ export function order(type) {
     dispatch({ type: "ORDER_TYPE", payload: type });
   }
 };
+
+export function Favorites(name, info) {
+  return async function (dispatch) {
+    dispatch({ type: "FAVORITE", payload:{name, info}});
+  }
+};

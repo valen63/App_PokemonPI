@@ -27,6 +27,13 @@ function NotFound({ type, name }) {
             <p className={style.pB}>This page not exist.</p>
             <p className={style.pB}>There was an error, check the writing and try again </p>
             <NavLink className={style.btnB} to="/Home">GO BACK</NavLink>
+          </div> :
+        type === "C" ?
+          <div className={style.errorC}>
+            <p className={style.pB}>You not have favorites pokemons for now</p>
+            <img src="https://i.gifer.com/origin/06/068c8f36ce4e0216bcc86ccc2e2401a0_w200.gif" alt="" className={style.img} />
+            <p className={style.pB}> Go to home an add some pokemons</p>
+            <NavLink className={style.btnC} to="/Home">GO BACK</NavLink>
           </div>
           : null}
     </div>

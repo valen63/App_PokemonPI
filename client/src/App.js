@@ -6,6 +6,7 @@ import Home from './Components/Home/Home';
 import NewPokemon from "./Components/Create/NewPokemon.js";
 import Detail from './Components/Create/Detail';
 import NotFound  from './Components/NotFound';
+import Favorites  from './Components/Favorite';
 
 import { AllPokemons, AllTypes } from './Reducer/Action';
 import Filter from './Components/Filters/Filter';
@@ -23,7 +24,8 @@ function App() {
         <Route path="/Home/:page" element={<Home />} />
         <Route path="/Type" element={<Filter />} />
         <Route path="/Type/:id" element={<FilterId />} />
-        {/* <Route path="/Type/:id/:page" element={<FilterId />} /> */}
+        <Route path="/Favorite" element={<Favorites />} />
+        <Route path="/Favorite/:page" element={<Favorites />} />
         <Route path="/Type/:id/:page" element={<FilterId restar="NO"/>} />
         <Route path="/Create" element={<NewPokemon />}/>
         <Route path="/Pokemon/:id" element={<Detail />}/>

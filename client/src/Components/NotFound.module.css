@@ -96,3 +96,28 @@
     font-family: 'Source Code Pro', monospace;
 
 }
+
+.errorC {
+    background: linear-gradient(180deg,rgb(255 232 36), rgb(255 36 87) 100%);
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Source Code Pro', monospace;
+
+}
+.btnC {
+    position: relative;
+    bottom: -50px;
+    color: #0b1f42de;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid;
+    background: #fefffe;
+}
+.btnC:hover {
+    background: #0b1f42de;
+    color: #ffe026;
+}

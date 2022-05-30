@@ -40,8 +40,6 @@ function CardF({ id }) {
         <div className={style.panel}>
           <button className="boton" id="AZ" onClick={(e) => Click(e)}>Orden by Name: ( A -{a} Z)</button>
           <button className="boton" id="ZA" onClick={(e) => Click(e)}>Orden by Name: ( Z -{a} A )</button>
-          {/* <div> <button id="API" className="boton" onClick={(e => Click(e))}>API</button>
-          <button className="boton" id="DB" onClick={(e => Click(e))}>DATABASE</button></div> */}
         </div>
       </div>}
     </div>

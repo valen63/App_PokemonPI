@@ -13,7 +13,7 @@ function Detail() {
   return (
     <div>
       <SearchBar btn="false"/>
-      <CardD />
+      <CardD id={parseInt(id)} dispatch={dispatch}/>
     </div>
   );
 }

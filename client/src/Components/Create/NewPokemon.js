@@ -5,6 +5,18 @@ import { createNew } from "../../Reducer/Action.js"
 import SearchBar from "../SearchBar/NavBar.js";
 import style from "./New.module.css";
 
+function Validate(input){
+  let errores={};
+  if (input.name !== "" && input.types.length>0) {
+    return(null)
+  } if(input.name ==="") {
+    errores.name= "The name is required"
+  } if(input.types.length===0) {
+    errores.types= "Select at least one type of pokemon" ;
+  }
+  return errores
+}
+
 function NewPokemon() {
 
   const { types } = useSelector((state) => state);
@@ -18,21 +30,22 @@ function NewPokemon() {
   const Submitiar = (e) => {
     e.preventDefault();
     let formulario = document.getElementById('formul');
-    if (input.name !== "" && input.types.length>0) {
+    let errorfind =Validate(input)
+    if (!errorfind) {
       createNew(input)(dispatch);
       seterrores({ good: "Pokemon: " + input.name + "  Created!" });
       setInput({ name: "", life: 0, strong: 0, defense: 0, speed: 0, height: 0, weight: 0, types: input.types, img: null, });
       formulario.reset();
-    } else if(input.name ==="") {
-      seterrores({ name: "The name is required" });
-    }else if(input.types.length===0) {
-      seterrores({ types: "Select at least one type of pokemon" });
+    } else {
+      seterrores(errorfind);
     }
   }
 
   const Changes = (e) => {
     if (e.target.name === "img" && e.target.value === "") { setInput({ ...input, img: null }); return }
     setInput({ ...input, [e.target.name]: e.target.value });
+    if(e.target.value=== "" && e.target.name === "name") {seterrores({...errores, name: "The name is required"})}else if(e.target.value!== "" && e.target.name === "name"){seterrores({...errores, name:null})}
+    
   }
   const Types = (e) => {
     if (e.target.className === "btns_not") {

@@ -3,6 +3,7 @@
 .Card{
     width: 23%;
     min-height: 150px;
+    position: relative;
     display: flex;
     flex-direction: column;
     background: #00000080;
@@ -35,6 +36,22 @@
 }
 .imagen{
     max-height: 100px;
+}
+.starbtn{
+    position: absolute;
+    top: 15px;
+    right: 8px;
+    height: 30px;
+    width: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.star{
+    height: 30px;
 }
 .Butons:hover{
     color: #fefffec9;

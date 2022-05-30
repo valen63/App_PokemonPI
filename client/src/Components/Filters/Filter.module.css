@@ -12,13 +12,13 @@
 .btn {
     margin: 3%;
     width: 80px;
-    padding: 4px 16px;
+    padding: 16px;
     color: white;
-    background-color: #006e18c4;
+    background-color: #0c006ec4;
     font-size: larger;
     font-weight: bold;
     border-radius: 8px;
-    border: 2px solid
+    border: 2px solid;
 }
 
 .btn:hover {
