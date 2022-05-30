@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 
 export async function AllPokemons() {
   const dispatch = useDispatch();
-  await axios.get(`http://localhost:3001/pokemons`)
+  await axios.get(`/pokemons`)
     .then((res) => {
       console.log("Ya tengo los pokemones");
       dispatch({ type: "GET_POKEMONS", payload: res.data });
@@ -16,7 +16,7 @@ export async function AllPokemons() {
 
 export async function AllTypes() {
   const dispatch = useDispatch();
-  await axios.get(`http://localhost:3001/types`)
+  await axios.get(`/types`)
     .then((res) => {
       console.log("Ya tengo los tipos");
       dispatch({ type: "GET_TYPES", payload: res.data });
@@ -28,7 +28,7 @@ export async function AllTypes() {
 };
 
 export async function AllPokemons2(dispatch) {
-  await axios.get(`http://localhost:3001/pokemons`)
+  await axios.get(`/pokemons`)
     .then((res) => {
       dispatch({ type: "GET_POKEMONS", payload: res.data });
     })
@@ -41,7 +41,7 @@ export async function AllPokemons2(dispatch) {
 
 export function FindByName(name, only = null) {
   return async function (dispatch) {
-    await axios.get(`http://localhost:3001/pokemons?name=${name}`)
+    await axios.get(`/pokemons?name=${name}`)
       .then((res) => {
         dispatch({ type: "GET_BY_NAME", payload: res.data });
       })
@@ -54,7 +54,7 @@ export function FindByName(name, only = null) {
 export function createNew(input) {
   input.name = input.name.toLowerCase();
   return async function (dispatch) {
-    await axios.post("http://localhost:3001/pokemons", input)
+    await axios.post("/pokemons", input)
       .then(resp => resp.data)
       .then(respuesta => dispatch({
         type: "POST_POKEMON",
@@ -72,7 +72,7 @@ export function Clear(dispatch) {
 
 export function FindById(id) {
   return async function (dispatch) {
-    await axios.get(`http://localhost:3001/pokemons/${id}`)
+    await axios.get(`/pokemons/${id}`)
       .then((res) => {
         dispatch({ type: "GET_DETAIL", payload: res.data });
       })
@@ -102,7 +102,7 @@ export function filterT(id) {
 
 export function FindType(id) {
   return async function (dispatch) {
-    await axios.get(`http://localhost:3001/types/${id}`)
+    await axios.get(`/types/${id}`)
       .then((res) => {
         dispatch({ type: "GET_TYPE_ID", payload: res.data.pokemons });
       })
