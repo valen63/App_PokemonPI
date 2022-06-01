@@ -20,7 +20,7 @@ function Cards() {
   var lastindex = MaxPokes * Page; //        12 24 36 ...
   var firstindex = MaxPokes * (Page - 1); //  0 12 24 ... 
   const List = MaxPage > 1 ? filteredPokemons.slice(firstindex, lastindex) : filteredPokemons;
-  // console.log(List);
+  console.log(List);
 
   return (
     <div className={style.Info}>

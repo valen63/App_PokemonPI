@@ -19,7 +19,7 @@ function NotFound({ type, name }) {
           <div className={style.cuatro}>4<img src="https://www.pngkey.com/png/full/519-5194869_pikachu-circle-png.png" alt="" className={style.img} />4</div>
           <p className={style.p}>This {name} does not exist.</p>
           {name === "type" ?<p className={style.p}>Maybe not have pokemons for this type for now, check the writing and try again </p>:<p className={style.p}>There was an error, check the writing and try again </p>}
-          <button className={style.btn} onClick={() => Click()}>GO BACK</button>
+          {name === "type" ?<NavLink className={style.btn} to="/Home">GO BACK</NavLink> :<button className={style.btn} onClick={() => Click()}>GO BACK</button>}
         </div> :
         type === "B" || type === "B2" ?
           <div className={type === "B" ? style.errorB : style.errorB2}>

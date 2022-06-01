@@ -13,6 +13,18 @@ export default function rootReducer(state = initialState, { type, payload }) {
   switch (type) {
     //Para obtener la lista completa de mi api y almacenarla en el estado
     case "GET_POKEMONS":
+      if(payload.length > 60 ){
+        let ids = [];
+        let all = payload.filter(elem => {
+          if (ids.find(e => e === elem.id)) { return false }
+          else { ids.push(elem.id); return true }
+        });
+        return {
+          ...state,
+          totalPokemons: all,
+          filteredPokemons: all,
+        };
+      }
       return {
         ...state,
         totalPokemons: payload,

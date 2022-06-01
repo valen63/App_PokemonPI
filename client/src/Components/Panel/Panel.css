@@ -80,5 +80,14 @@ input[type="checkbox"]:checked+p {
 
     .Not_Panel {
         width: 100%;
+        visibility: visible;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #00000085;
+        border-bottom: 2px solid;
+        color: white;
+        padding-top: 5px;
     }
 }
