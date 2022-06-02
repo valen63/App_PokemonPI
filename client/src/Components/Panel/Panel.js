@@ -32,7 +32,7 @@ function Panel() {
     }
 
     return (
-        <div id="PANEL" className="Not_Panel">
+        <div id="PANEL" className="Active_Panel">
             <button name="CLEAR" className="boton" onClick={(() => Click3())}>Show All Pokemons</button>
             <select name="nombre" className="boton" onChange={(e) => Click2(e)} >
                 <option value="1">Select--- </option>
